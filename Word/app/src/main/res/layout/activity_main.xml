@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/upSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UP"/>
+
+        <Button
+            android:id="@+id/downSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOWN"/>
+
+        <Button
+            android:id="@+id/countSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count"/>
+
+        <Button
+            android:id="@+id/recentSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/wordList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"/>
+
+    <EditText
+        android:id="@+id/wordEdit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="input word"/>
+
+    <Button
+        android:id="@+id/wordBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="add word"/>
+
+</LinearLayout>
